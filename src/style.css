@@ -1,0 +1,57 @@
+*:root{
+    --light: #fff;
+    --dark: #121212;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    height: 100vh;
+}
+.light-theme{
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.dark-theme{
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.content {
+    --text-color: #222;
+    --bkg-color: #fff;
+  }
+.content.dark-theme {
+    --text-color: #eee;
+    --bkg-color: #121212;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    /* defaults to dark theme */
+    .content {
+      --text-color: #eee;
+      --bkg-color: #121212;
+    }
+    .content.light-theme {
+      --text-color: #222;
+      --bkg-color: #fff;
+    }
+  }
+  
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    background: var(--bkg-color);
+  }
+  
+  h1,
+  p {
+    color: var(--text-color);
+  }
+  
