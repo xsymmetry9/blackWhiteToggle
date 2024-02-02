@@ -46,7 +46,7 @@
     font-family: Arial, Helvetica, sans-serif;
   }
   
-  body {
+  .content {
     background: var(--bkg-color);
   }
   

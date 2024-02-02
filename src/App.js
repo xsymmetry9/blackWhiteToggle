@@ -4,10 +4,9 @@ const App = () =>{
 
     const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
     const [theme, setTheme] = useState(prefersDarkScheme.matches ? 'dark' : 'light');
-    console.log(theme);
 
     const changeTheme = () =>{
-        setTheme(theme => theme === 'dark' ? "light" : "dark" )
+        setTheme(theme => theme === 'dark' ? "light" : "dark" );
     }
 
     return(
